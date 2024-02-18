@@ -35,8 +35,11 @@ typedef enum bool
 
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
-/*task 1*/
+/*task 2*/
 void bubble_sort(int *array, size_t size);
 void swap_ints(int *a, int *b);
+/*task 1*/
+void swap_nodes(listint_t **header, listint_t **node1, listint_t *node2);
+void insertion_sort_list(listint_t **list);
 
 #endif/*SORT_H*/
