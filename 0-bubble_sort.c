@@ -21,17 +21,23 @@ void swap_function(int *a, int *b)
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i, len = size;
+        size_t i, len = size;
+        bool bubbly = false;
 
-	if (array == NULL)
-		return;
-	for (i = 0; i < len - 1; i++)
-	{
-		if (array[i] > array[i + 1])
-		{
-			swap_function(array + i, array + i + 1);
-			print_array(array, size);
-		}
-	}
-	len--;
+        if (array == NULL)
+                return;
+        while (bubbly == false)
+        {
+                bubbly = true;
+                for (i = 0; i < len - 1; i++)
+                {
+                        if (array[i] > array[i + 1])
+                        {
+                                swap_function(array + i, array + i + 1);
+                                print_array(array, size);
+                                bubbly = false;
+                        }
+                }
+                len--;
+        }
 }
