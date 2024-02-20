@@ -53,4 +53,12 @@ void shell_sort(int *array, size_t size);
 /*task 5*/
 void cocktail_sort_list(listint_t **list);
 void swap_node(listint_t **list, listint_t *node1, listint_t *node2);
+/*task 6*/
+void counting_sort(int *array, size_t size);
+int get_max(int *array, int size);
+/*task 7*/
+void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
+                size_t back);
+void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
+void merge_sort(int *array, size_t size);
 #endif/*SORT_H*/

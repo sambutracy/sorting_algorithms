@@ -25,6 +25,7 @@ void shell_sort(int *array, size_t size)
 			j = i;
 			while (j >= gap && array[j - gap] > array[j])
 			{
+				/*from the bubble_sort file*/
 				swap_function(array + j, array + (j - gap));
 				j -= gap;
 			}
