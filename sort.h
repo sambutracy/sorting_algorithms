@@ -61,4 +61,8 @@ void sort_subarr(int *subarray, int *buff, size_t f_index, size_t m_index,
                 size_t back);
 void merge_sort_recursive(int *subarray, int *buff, size_t f_index, size_t back);
 void merge_sort(int *array, size_t size);
+/*task 8*/
+void heapify(int *array, size_t size, int i, size_t len);
+void heap_sort(int *array, size_t size);
+
 #endif/*SORT_H*/
